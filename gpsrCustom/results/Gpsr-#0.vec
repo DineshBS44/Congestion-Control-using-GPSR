@@ -1,0 +1,339 @@
+version 2
+run Gpsr-0-20211124-14:16:46-10160
+attr configname Gpsr
+attr datetime 20211124-14:16:46
+attr experiment Gpsr
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network ManetprotocolsShowcaseA
+attr processid 10160
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param *.*.routing.typename "\"Gpsr\""
+param **.planarizationMode "\"RNG\""
+param **.displayBubbles true
+param **.transmitter.power 1.25mW
+param *.visualizer.*.networkRouteVisualizer[0].displayRoutes true
+param *.visualizer.*.networkRouteVisualizer[0].packetFilter "\"*ping*\""
+param **.displayCommunicationRanges true
+param *.source.numApps 1
+param *.source.app[0].typename "\"PingApp\""
+param *.source.app[0].destAddr "\"destination\""
+param *.source.app[0].printPing true
+param *.visualizer.*.numDataLinkVisualizers 5
+param *.visualizer.*.dataLinkVisualizer[*].activityLevel "\"peer\""
+param *.visualizer.*.dataLinkVisualizer[*].displayLinks true
+param *.visualizer.*.dataLinkVisualizer[0].packetFilter "\"aodv::Rreq or GPSRBeacon\""
+param *.visualizer.*.dataLinkVisualizer[1].packetFilter "\"ping* or UDP*\""
+param *.visualizer.*.dataLinkVisualizer[1].*Color "\"blue\""
+param *.visualizer.*.dataLinkVisualizer[2].packetFilter "\"aodv::Rrep\""
+param *.visualizer.*.dataLinkVisualizer[2].*Color "\"darkslategray\""
+param *.visualizer.*.dataLinkVisualizer[3].packetFilter "\"aodv::Rerr\""
+param *.visualizer.*.dataLinkVisualizer[3].*Color "\"red\""
+param *.visualizer.*.dataLinkVisualizer[4].packetFilter "\"Hello\""
+param *.visualizer.*.dataLinkVisualizer[4].*Color "\"green\""
+param **.wlan[*].bitrate 24Mbps
+param *.configurator.addStaticRoutes false
+param **.netmaskRoutes "\"\""
+param **.arp.typename "\"GlobalArp\""
+
+vector 0 ManetprotocolsShowcaseA.source.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 ManetprotocolsShowcaseA.source.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 2 ManetprotocolsShowcaseA.destination.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 ManetprotocolsShowcaseA.destination.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 4 ManetprotocolsShowcaseA.node1.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 ManetprotocolsShowcaseA.node1.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 6 ManetprotocolsShowcaseA.node2.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 ManetprotocolsShowcaseA.node2.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 8 ManetprotocolsShowcaseA.node3.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 ManetprotocolsShowcaseA.node3.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 10 ManetprotocolsShowcaseA.node4.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 11 ManetprotocolsShowcaseA.node4.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 12 ManetprotocolsShowcaseA.node5.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 13 ManetprotocolsShowcaseA.node5.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 14 ManetprotocolsShowcaseA.node6.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 ManetprotocolsShowcaseA.node6.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 16 ManetprotocolsShowcaseA.node7.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 ManetprotocolsShowcaseA.node7.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 18 ManetprotocolsShowcaseA.node8.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 19 ManetprotocolsShowcaseA.node8.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 20 ManetprotocolsShowcaseA.node9.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 21 ManetprotocolsShowcaseA.node9.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 22 ManetprotocolsShowcaseA.node10.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 23 ManetprotocolsShowcaseA.node10.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 24 ManetprotocolsShowcaseA.node11.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 ManetprotocolsShowcaseA.node11.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 26 ManetprotocolsShowcaseA.node12.wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 27 ManetprotocolsShowcaseA.node12.wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 28 ManetprotocolsShowcaseA.source.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 29 ManetprotocolsShowcaseA.destination.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 30 ManetprotocolsShowcaseA.node1.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 31 ManetprotocolsShowcaseA.node2.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 32 ManetprotocolsShowcaseA.node3.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 33 ManetprotocolsShowcaseA.node4.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 34 ManetprotocolsShowcaseA.node5.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 35 ManetprotocolsShowcaseA.node6.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 36 ManetprotocolsShowcaseA.node7.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 37 ManetprotocolsShowcaseA.node8.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 38 ManetprotocolsShowcaseA.node9.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 39 ManetprotocolsShowcaseA.node10.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 40 ManetprotocolsShowcaseA.node11.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 41 ManetprotocolsShowcaseA.node12.wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 42 ManetprotocolsShowcaseA.source.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 43 ManetprotocolsShowcaseA.destination.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 44 ManetprotocolsShowcaseA.node1.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 45 ManetprotocolsShowcaseA.node2.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 46 ManetprotocolsShowcaseA.node3.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 47 ManetprotocolsShowcaseA.node4.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 48 ManetprotocolsShowcaseA.node5.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 49 ManetprotocolsShowcaseA.node6.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 50 ManetprotocolsShowcaseA.node7.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 51 ManetprotocolsShowcaseA.node8.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 52 ManetprotocolsShowcaseA.node9.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 53 ManetprotocolsShowcaseA.node10.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 54 ManetprotocolsShowcaseA.node11.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 55 ManetprotocolsShowcaseA.node12.wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+0	0	0	0
+0	0	0	0
+0	0	0	2
+1	0	0	0
+2	0	0	0
+2	0	0	0
+2	0	0	2
+3	0	0	0
+4	0	0	0
+4	0	0	0
+4	0	0	2
+5	0	0	0
+6	0	0	0
+6	0	0	0
+6	0	0	2
+7	0	0	0
+8	0	0	0
+8	0	0	0
+8	0	0	2
+9	0	0	0
+10	0	0	0
+10	0	0	0
+10	0	0	2
+11	0	0	0
+12	0	0	0
+12	0	0	0
+12	0	0	2
+13	0	0	0
+14	0	0	0
+14	0	0	0
+14	0	0	2
+15	0	0	0
+16	0	0	0
+16	0	0	0
+16	0	0	2
+17	0	0	0
+18	0	0	0
+18	0	0	0
+18	0	0	2
+19	0	0	0
+20	0	0	0
+20	0	0	0
+20	0	0	2
+21	0	0	0
+22	0	0	0
+22	0	0	0
+22	0	0	2
+23	0	0	0
+24	0	0	0
+24	0	0	0
+24	0	0	2
+25	0	0	0
+26	0	0	0
+26	0	0	0
+26	0	0	2
+27	0	0	0
+28	0	0	1
+29	0	0	1
+30	0	0	1
+31	0	0	1
+32	0	0	1
+33	0	0	1
+34	0	0	1
+35	0	0	1
+36	0	0	1
+37	0	0	1
+38	0	0	1
+39	0	0	1
+40	0	0	1
+41	0	0	1
+42	0	0	31
+43	0	0	31
+44	0	0	31
+45	0	0	31
+46	0	0	31
+47	0	0	31
+48	0	0	31
+49	0	0	31
+50	0	0	31
+51	0	0	31
+52	0	0	31
+53	0	0	31
+54	0	0	31
+55	0	0	31
+

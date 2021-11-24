@@ -1,0 +1,414 @@
+file 16710 1637749218                                           
+version 2
+run Random-0-20211124-15:50:09-5588
+attr configname Random
+attr datetime 20211124-15:50:09
+attr experiment Random
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsf ""
+attr measurement ""
+attr network GPSRNetworkRandom
+attr processid 5588
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+param **.host[*].mobility.typename "\"StationaryMobility\""
+param *.host[*].numApps 1
+param *.host[*].app[0].typename "\"PingApp\""
+param *.host[*].app[0].startTime uniform(1s,5s)
+param *.host[*].app[0].printPing true
+param *.numHosts 20
+param **.mobility.constraintAreaMinZ 0m
+param **.mobility.constraintAreaMaxZ 0m
+param **.mobility.constraintAreaMinX 0m
+param **.mobility.constraintAreaMinY 0m
+param **.mobility.constraintAreaMaxX 1000m
+param **.mobility.constraintAreaMaxY 1000m
+param **.wlan[*].bitrate 2Mbps
+param **.wlan[*].mac.dcf.channelAccess.cwMin 7
+param **.wlan[*].radio.transmitter.power 2mW
+
+vector 0 GPSRNetworkRandom.host[0].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 1 GPSRNetworkRandom.host[0].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 2 GPSRNetworkRandom.host[1].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 3 GPSRNetworkRandom.host[1].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 4 GPSRNetworkRandom.host[2].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 5 GPSRNetworkRandom.host[2].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 6 GPSRNetworkRandom.host[3].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 7 GPSRNetworkRandom.host[3].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 8 GPSRNetworkRandom.host[4].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 9 GPSRNetworkRandom.host[4].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 10 GPSRNetworkRandom.host[5].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 11 GPSRNetworkRandom.host[5].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 12 GPSRNetworkRandom.host[6].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 13 GPSRNetworkRandom.host[6].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 14 GPSRNetworkRandom.host[7].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 15 GPSRNetworkRandom.host[7].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 16 GPSRNetworkRandom.host[8].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 17 GPSRNetworkRandom.host[8].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 18 GPSRNetworkRandom.host[9].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 19 GPSRNetworkRandom.host[9].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 20 GPSRNetworkRandom.host[10].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 21 GPSRNetworkRandom.host[10].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 22 GPSRNetworkRandom.host[11].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 23 GPSRNetworkRandom.host[11].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 24 GPSRNetworkRandom.host[12].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 25 GPSRNetworkRandom.host[12].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 26 GPSRNetworkRandom.host[13].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 27 GPSRNetworkRandom.host[13].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 28 GPSRNetworkRandom.host[14].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 29 GPSRNetworkRandom.host[14].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 30 GPSRNetworkRandom.host[15].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 31 GPSRNetworkRandom.host[15].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 32 GPSRNetworkRandom.host[16].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 33 GPSRNetworkRandom.host[16].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 34 GPSRNetworkRandom.host[17].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 35 GPSRNetworkRandom.host[17].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 36 GPSRNetworkRandom.host[18].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 37 GPSRNetworkRandom.host[18].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 38 GPSRNetworkRandom.host[19].wlan[0].radio radioMode:vector ETV
+attr interpolationmode sample-hold
+attr source radioModeChanged
+attr title "Radio mode, vector"
+vector 39 GPSRNetworkRandom.host[19].wlan[0].radio radioChannel:vector ETV
+attr interpolationmode sample-hold
+attr source radioChannelChanged
+attr title "Radio channel, vector"
+vector 40 GPSRNetworkRandom.host[0].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 41 GPSRNetworkRandom.host[1].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 42 GPSRNetworkRandom.host[2].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 43 GPSRNetworkRandom.host[3].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 44 GPSRNetworkRandom.host[4].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 45 GPSRNetworkRandom.host[5].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 46 GPSRNetworkRandom.host[6].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 47 GPSRNetworkRandom.host[7].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 48 GPSRNetworkRandom.host[8].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 49 GPSRNetworkRandom.host[9].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 50 GPSRNetworkRandom.host[10].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 51 GPSRNetworkRandom.host[11].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 52 GPSRNetworkRandom.host[12].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 53 GPSRNetworkRandom.host[13].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 54 GPSRNetworkRandom.host[14].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 55 GPSRNetworkRandom.host[15].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 56 GPSRNetworkRandom.host[16].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 57 GPSRNetworkRandom.host[17].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 58 GPSRNetworkRandom.host[18].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 59 GPSRNetworkRandom.host[19].wlan[0].radio receptionState:vector ETV
+attr interpolationmode sample-hold
+attr source receptionStateChanged
+attr title "Radio reception state, vector"
+vector 60 GPSRNetworkRandom.host[0].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 61 GPSRNetworkRandom.host[1].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 62 GPSRNetworkRandom.host[2].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 63 GPSRNetworkRandom.host[3].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 64 GPSRNetworkRandom.host[4].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 65 GPSRNetworkRandom.host[5].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 66 GPSRNetworkRandom.host[6].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 67 GPSRNetworkRandom.host[7].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 68 GPSRNetworkRandom.host[8].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 69 GPSRNetworkRandom.host[9].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 70 GPSRNetworkRandom.host[10].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 71 GPSRNetworkRandom.host[11].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 72 GPSRNetworkRandom.host[12].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 73 GPSRNetworkRandom.host[13].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 74 GPSRNetworkRandom.host[14].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 75 GPSRNetworkRandom.host[15].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 76 GPSRNetworkRandom.host[16].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 77 GPSRNetworkRandom.host[17].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 78 GPSRNetworkRandom.host[18].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+vector 79 GPSRNetworkRandom.host[19].wlan[0].mac.dcf.recoveryProcedure contentionWindowChanged:vector ETV
+attr interpolationmode sample-hold
+attr title "contention window, vector"
+0	15528 27 0 0 0 0 3 0 2 2 4
+1	15555 9 0 0 0 0 1 0 0 0 0
+2	15564 27 0 0 0 0 3 0 2 2 4
+3	15591 9 0 0 0 0 1 0 0 0 0
+4	15600 27 0 0 0 0 3 0 2 2 4
+5	15627 9 0 0 0 0 1 0 0 0 0
+6	15636 27 0 0 0 0 3 0 2 2 4
+7	15663 9 0 0 0 0 1 0 0 0 0
+8	15672 27 0 0 0 0 3 0 2 2 4
+9	15699 9 0 0 0 0 1 0 0 0 0
+10	15708 30 0 0 0 0 3 0 2 2 4
+11	15738 10 0 0 0 0 1 0 0 0 0
+12	15748 30 0 0 0 0 3 0 2 2 4
+13	15778 10 0 0 0 0 1 0 0 0 0
+14	15788 30 0 0 0 0 3 0 2 2 4
+15	15818 10 0 0 0 0 1 0 0 0 0
+16	15828 30 0 0 0 0 3 0 2 2 4
+17	15858 10 0 0 0 0 1 0 0 0 0
+18	15868 30 0 0 0 0 3 0 2 2 4
+19	15898 10 0 0 0 0 1 0 0 0 0
+20	15908 30 0 0 0 0 3 0 2 2 4
+21	15938 10 0 0 0 0 1 0 0 0 0
+22	15948 30 0 0 0 0 3 0 2 2 4
+23	15978 10 0 0 0 0 1 0 0 0 0
+24	15988 30 0 0 0 0 3 0 2 2 4
+25	16018 10 0 0 0 0 1 0 0 0 0
+26	16028 30 0 0 0 0 3 0 2 2 4
+27	16058 10 0 0 0 0 1 0 0 0 0
+28	16068 30 0 0 0 0 3 0 2 2 4
+29	16098 10 0 0 0 0 1 0 0 0 0
+30	16108 30 0 0 0 0 3 0 2 2 4
+31	16138 10 0 0 0 0 1 0 0 0 0
+32	16148 30 0 0 0 0 3 0 2 2 4
+33	16178 10 0 0 0 0 1 0 0 0 0
+34	16188 30 0 0 0 0 3 0 2 2 4
+35	16218 10 0 0 0 0 1 0 0 0 0
+36	16228 30 0 0 0 0 3 0 2 2 4
+37	16258 10 0 0 0 0 1 0 0 0 0
+38	16268 30 0 0 0 0 3 0 2 2 4
+39	16298 10 0 0 0 0 1 0 0 0 0
+40	16308 10 0 0 0 0 1 1 1 1 1
+41	16318 10 0 0 0 0 1 1 1 1 1
+42	16328 10 0 0 0 0 1 1 1 1 1
+43	16338 10 0 0 0 0 1 1 1 1 1
+44	16348 10 0 0 0 0 1 1 1 1 1
+45	16358 10 0 0 0 0 1 1 1 1 1
+46	16368 10 0 0 0 0 1 1 1 1 1
+47	16378 10 0 0 0 0 1 1 1 1 1
+48	16388 10 0 0 0 0 1 1 1 1 1
+49	16398 10 0 0 0 0 1 1 1 1 1
+50	16408 10 0 0 0 0 1 1 1 1 1
+51	16418 10 0 0 0 0 1 1 1 1 1
+52	16428 10 0 0 0 0 1 1 1 1 1
+53	16438 10 0 0 0 0 1 1 1 1 1
+54	16448 10 0 0 0 0 1 1 1 1 1
+55	16458 10 0 0 0 0 1 1 1 1 1
+56	16468 10 0 0 0 0 1 1 1 1 1
+57	16478 10 0 0 0 0 1 1 1 1 1
+58	16488 10 0 0 0 0 1 1 1 1 1
+59	16498 10 0 0 0 0 1 1 1 1 1
+60	16508 10 0 0 0 0 1 7 7 7 49
+61	16518 10 0 0 0 0 1 7 7 7 49
+62	16528 10 0 0 0 0 1 7 7 7 49
+63	16538 10 0 0 0 0 1 7 7 7 49
+64	16548 10 0 0 0 0 1 7 7 7 49
+65	16558 10 0 0 0 0 1 7 7 7 49
+66	16568 10 0 0 0 0 1 7 7 7 49
+67	16578 10 0 0 0 0 1 7 7 7 49
+68	16588 10 0 0 0 0 1 7 7 7 49
+69	16598 10 0 0 0 0 1 7 7 7 49
+70	16608 10 0 0 0 0 1 7 7 7 49
+71	16618 10 0 0 0 0 1 7 7 7 49
+72	16628 10 0 0 0 0 1 7 7 7 49
+73	16638 10 0 0 0 0 1 7 7 7 49
+74	16648 10 0 0 0 0 1 7 7 7 49
+75	16658 10 0 0 0 0 1 7 7 7 49
+76	16668 10 0 0 0 0 1 7 7 7 49
+77	16678 10 0 0 0 0 1 7 7 7 49
+78	16688 10 0 0 0 0 1 7 7 7 49
+79	16698 10 0 0 0 0 1 7 7 7 49
+
